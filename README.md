@@ -13,8 +13,8 @@
 
 ### 📂 Project Catalog
 
-| Folder Name | Description | Key Concepts Learned |
-| :--- | :--- | :--- |
+| Description | Key Concepts Learned |
+| :--- | :--- |
 | Basic Structure | `<h1>`, `<p>`, Lists, and Text Formatting. |
 | Forms & Inputs | User input validation, input types, and labels. |
 | Table Layouts | `<table>`, `<tr>`, `<td>`, and data organization. |
