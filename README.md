@@ -231,6 +231,7 @@ graph LR
 ---
 
 <div style="justify-self: center;">
+    
 ### 🎯 Core Skills Developed
 
 | Skill Area | Technologies | Proficiency |
