@@ -16,8 +16,8 @@
 
 ## 📑 Table of Contents
 
-- [🎓 College Projects](#-college-projects)
 - [🚀 FreeCodeCamp Projects](#-freecodecamp-projects)
+- [🎓 College Projects](#-college-projects)
 - [🛠️ Technologies Used](#️-technologies-used)
 - [📚 Learning Outcomes](#-learning-outcomes)
 
