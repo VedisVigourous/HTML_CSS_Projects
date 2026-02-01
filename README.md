@@ -230,7 +230,7 @@ graph LR
 
 ---
 
-<div style="justify-self: center;">
+<div align="center">
     
 ### 🎯 Core Skills Developed
 
