@@ -228,6 +228,9 @@ graph LR
     style E fill:#AB47BC,color:#fff
 ```
 
+---
+
+<div style="justify-self: center;">
 ### 🎯 Core Skills Developed
 
 | Skill Area | Technologies | Proficiency |
@@ -237,6 +240,8 @@ graph LR
 | **Forms** | Input Types, Validation | ⭐⭐⭐⭐ |
 | **Layout** | Responsive Design | ⭐⭐⭐⭐ |
 | **UI/UX** | Design Principles | ⭐⭐⭐⭐ |
+
+</div>
 
 ---
 
@@ -251,7 +256,7 @@ graph LR
 ### 🔗 Connect & Learn More
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)]()
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VedisVigourous)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
 
 ---
