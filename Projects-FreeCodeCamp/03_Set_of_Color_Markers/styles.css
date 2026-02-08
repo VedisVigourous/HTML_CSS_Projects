@@ -1,0 +1,65 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap, .sleeve {
+  display: inline-block;
+}
+
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 blue;
+}
+
+/* Inisghts -
+
+- background: linear-gradient(color1, color2, color3) creates a smooth color blend from first to last. Add a percentage value after color to control where the gradient transitions occur. Ex: color1 50% means color1 will be fully applied up to 50% of the element, then it will start blending into color2.
+
+- box-shadow: offsetX offsetY blurRadius spreadRadius color; offsetX moves shadow left/right, offsetY moves it up/down, blurRadius softens edges, spreadRadius grows/shrinks the shadow.
+
+- background-color: rgba(r, g, b, a) uses an alpha channel (a) for transparency, where 0 is fully transparent and 1 is fully opaque.
+
+- border-left: width style color sets only the left border with its thickness, line style, and color.
+*/
+
+/*  Colors formats:
+
+- rgb(r, g, b): red, green, and blue channel strengths (0-255) for mixing colors.
+- rgba(r, g, b, a): same as rgb plus alpha (a) for transparency, from 0 (transparent) to 1 (opaque).
+- hsl(h, s, l): hue (color angle), saturation (color intensity), lightness (brightness).
+*/
+
+
