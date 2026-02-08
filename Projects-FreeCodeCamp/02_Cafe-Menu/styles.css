@@ -93,3 +93,27 @@ a:hover {
 a:active {
   color: brown;
 }
+
+/*
+INSIGHT (less-common selectors used here) - syntax + purpose
+
+1) Grouping selector: combine multiple selectors to share the same rules.
+  Syntax: selector1, selector2, selector3 { ... }
+  Example: h1, h2, p { text-align: center; }
+
+2) Descendant selector: target an element only when it appears inside another.
+  Syntax: ancestor descendant { ... }
+  Example: .item p { display: inline-block; }
+
+3) Class selector: target elements with a specific class value.
+  Syntax: .className { ... }
+  Example: .bottom-line { margin-top: 25px; }
+
+4) Multiple class selectors (grouped): apply rules to several classes at once.
+  Syntax: .classA, .classB { ... }
+  Example: .flavor, .dessert { text-align: left; }
+
+5) Pseudo-class selector: target element states (link states here).
+  Syntax: element:pseudo-class { ... }
+  Example: a:visited { color: black; }
+*/
