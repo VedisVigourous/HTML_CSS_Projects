@@ -181,6 +181,43 @@ A stylish cafe menu demonstrating CSS fundamentals and design principles.
 
 ---
 
+### 🖍️ 03 - Set of Color Markers
+
+<table>
+<tr>
+<td width="70%">
+
+**Color and Gradient Practice**
+
+A creative project focused on CSS color systems and visual effects.
+
+**Key Learning Points:**
+- Linear gradients and smooth color transitions
+- Box-shadow for glow effects
+- Color formats: `rgb`, `rgba`, `hsl`, and hex
+- Inline-block layout alignment
+
+</td>
+<td width="30%" align="center">
+
+```
+  |\
+  | \
+  |  \
+  |___\
+  🖍️ CSS 🖍️
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/03_Set_of_Color_Markers)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
