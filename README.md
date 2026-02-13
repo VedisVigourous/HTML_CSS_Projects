@@ -218,6 +218,45 @@ A creative project focused on CSS color systems and visual effects.
 
 ---
 
+### 📝 04 - Building a Registration Form
+
+<table>
+<tr>
+<td width="70%">
+
+**Form Structure and Validation**
+
+A practical project focused on building accessible forms with HTML constraints and clean, reusable CSS.
+
+**Key Learning Points:**
+- Field grouping with `<fieldset>` and `<legend>`
+- Validation patterns with `required`, `min`, `max`, and `pattern`
+- Radio/checkbox behavior using shared `name`
+- Select and textarea controls with meaningful `value` attributes
+- Attribute selectors like `input[type="submit"]`
+
+</td>
+<td width="30%" align="center">
+
+```
+  ________
+ |  FORM  |
+ |  ____  |
+ | |____| |
+ |________|
+  📝 HTML 📝
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/04_Building_Registration_Form)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
@@ -275,7 +314,7 @@ graph LR
 |:-----------|:-------------|:------------|
 | **Markup** | HTML5, Semantic Elements | ⭐⭐⭐⭐⭐ |
 | **Styling** | CSS3, Flexbox, Grid | ⭐⭐⭐⭐⭐ |
-| **Forms** | Input Types, Validation | ⭐⭐⭐⭐ |
+| **Forms** | Input Types, Validation, Accessibility | ⭐⭐⭐⭐⭐ |
 | **Layout** | Responsive Design | ⭐⭐⭐⭐ |
 | **UI/UX** | Design Principles | ⭐⭐⭐⭐ |
 
