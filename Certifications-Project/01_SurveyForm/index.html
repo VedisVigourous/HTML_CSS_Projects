@@ -1,0 +1,54 @@
+<!-- Dated: 15-02-2026 -->
+ 
+<!-- Author: Vadanta Kumar Chauhaan
+  -- Link to Project: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
+  -- Github: https://github.com/VedisVigourous
+  -- Linked: https://linkedin.com/in/vadanta/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+    <h1 id="title">Vedant's Survey Form</h1>
+    <p id="description">Feedback is fuel! every insight helps us grow and improve</p>
+
+  <div class="container">
+    <form id="survey-form">
+      <label for="name" id="name-label">Good Name</label>
+      <input type="text" id="name" required placeholder="U are?">
+      <label for="email" id="email-label">Elec-Mail</label>
+      <input type="email" id="email" required placeholder="Contact-Mail?">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" min="13" max="120" id="number" placeholder="Adult?">
+
+      <label for="dropdown">Profession?</label>
+      <select id="dropdown">
+        <option>U are a?</option>
+          <option>Student</option>
+          <option>Employee</option>
+      </select>
+
+      
+      <label>Select Your Gender</label>
+      <div id="radio-group">
+      <label for="male"><input type="radio" name="gender" value="male"> Male</label>      
+      <label for="female"><input type="radio" name="gender" value="female"> Female  </label>
+      </div>
+
+      <label>Primary Device</label>
+      <div id="checkbox-group">
+      <label for="mobile"><input type="checkbox" value="mobile"> Mobile</label>
+      <label for="desktop"  ><input type="checkbox" value="desktop"> Desktop</label>
+      </div>
+
+      <label id="feedback-custom">Brief Feedback</label>
+      <textarea id="comments" placeholder="Enter your feedback here..."></textarea>
+
+      <input type="submit" id="submit" value="Submit Feedback">
+    </form>
+  </div>
+<body>
+</html>

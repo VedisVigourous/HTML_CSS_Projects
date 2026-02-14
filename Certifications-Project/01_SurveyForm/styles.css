@@ -1,0 +1,160 @@
+/* Dated: 15-02-2026 */
+ 
+/* Author: Vadanta Kumar Chauhaan
+ * Link to Project: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
+ * Github: https://github.com/VedisVigourous
+ * Linked: https://linkedin.com/in/vadanta/ */
+
+body {
+  margin: 2rem 0;
+  padding: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/006/852/864/non_2x/abstract-colorful-different-form-background-free-vector.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+#title {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0 -0.3rem 0; 
+}
+
+#description {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  font-style: italic;
+  font-family: Arial;
+}
+
+.container {
+  background-color: rgb(246, 237, 181);
+  padding: 2rem;
+  width: fit-content;
+  justify-self: center;
+  border-radius: 15px;
+}
+
+label {
+  font-family: Tahoma;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color:rgb(148, 104, 9)
+}
+
+input {
+  min-height: 2rem;
+  min-width: 40rem;
+  background-color: rgb(235, 216, 164);
+  border: none;
+  border-radius: 10px;
+  margin: 0.4rem 0 2rem 0;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(155, 130, 75);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgb(148, 104, 9);
+}
+
+input::placeholder {
+  color:rgb(235, 216, 164);
+} 
+
+
+label , input {
+  display: block;
+}
+
+input[name="gender"] {
+  display: inline;
+  margin: 0;
+  min-width: unset;
+  vertical-align: middle;
+}
+
+select {
+  min-height: 2rem;
+  min-width: 40rem;
+  background-color: rgb(235, 216, 164);
+  border: none;
+  border-radius: 10px;
+  margin: 0.4rem 0 2rem 0;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(155, 130, 75);
+}
+
+fieldset {
+  padding: 0.3rem;
+  margin: 1rem 0;
+}
+
+legend {
+  font-family: Tahoma;
+  font-size: 1rem;
+}
+
+label[for="male"], label[for="female"] {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  display: inline;
+  margin: 0;
+  min-width: unset;
+  vertical-align: middle;
+}
+
+label[for="mobile"], label[for="desktop"] {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#radio-group {
+  min-width: fit-content;
+  min-height: fit-content;
+  background-color: rgb(235, 216, 164);
+  border: none;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+#checkbox-group {
+  min-width: fit-content;
+  min-height: fit-content;
+  background-color: rgb(235, 216, 164);
+  border: none;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+}
+
+#feedback-custom {
+  margin-top: 1rem;
+}
+
+textarea {
+  min-width: 40rem;
+  min-height: 5rem;
+  background-color: rgb(235, 216, 164);
+  border: none;
+  border-radius: 10px;
+  margin: 0.4rem 0 2rem 0;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(155, 130, 75);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgb(148, 104, 9);
+}
