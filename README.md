@@ -17,9 +17,24 @@
 ## 📑 Table of Contents
 
 - [🚀 FreeCodeCamp Projects](#-freecodecamp-projects)
+- [🏅 Certification Projects](#-certification-projects)
 - [🎓 College Projects](#-college-projects)
 - [🛠️ Technologies Used](#️-technologies-used)
 - [📚 Learning Outcomes](#-learning-outcomes)
+
+---
+
+## 🏅 Certification Projects
+
+<details open>
+<summary><b>📋 01 - Survey Form (FCC)</b></summary>
+
+Responsive survey form built for the FreeCodeCamp certification milestone.
+- **Tech**: HTML5, CSS3
+- **Concepts**: Form semantics, input validation, layout structure
+- 📄 [View Project](./Certifications-Project/01_SurveyForm)
+
+</details>
 
 ---
 
