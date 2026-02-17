@@ -272,6 +272,46 @@ A practical project focused on building accessible forms with HTML constraints a
 
 ---
 
+### 🎨 05 - Rothko Painting
+
+<table>
+<tr>
+<td width="70%">
+
+**Abstract Art with CSS**
+
+A tribute to Mark Rothko's minimalist style, exploring advanced CSS visual effects to create soft, layered abstract artwork.
+
+**Key Learning Points:**
+- **Filter property** with `blur()` for soft visual effects
+- **Box-shadow syntax** with offset, blur, spread, and color for glowing halos
+- **Border-radius with 4 values** (clockwise from top-left) for organic shapes
+- **Transform: rotate** with subtle angles for natural, hand-painted feel
+- Combining multiple effects to achieve artistic depth
+- Overflow control for contained compositions
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌─────────┐
+  │░░░░░░░░░│
+  │▒▒▒▒▒▒▒▒▒│
+  │▓▓▓▓▓▓▓▓▓│
+  └─────────┘
+  🎨 CSS 🎨
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/05_Rothko_Painting)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
