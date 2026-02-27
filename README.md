@@ -312,6 +312,48 @@ A tribute to Mark Rothko's minimalist style, exploring advanced CSS visual effec
 
 ---
 
+### 🖼️ 06 - FlexBox Photo Gallery
+
+<table>
+<tr>
+<td width="70%">
+
+**Mastering Flexbox Layout**
+
+A responsive photo gallery showcasing the power and flexibility of CSS Flexbox for modern web layouts.
+
+**Key Learning Points:**
+- **display: flex** - The foundation of flexible layouts
+- **flex-direction** (row, column, reverse) for content flow
+- **flex-wrap** for responsive multi-line layouts
+- **justify-content** - Main axis alignment (space-between, center, etc.)
+- **align-items** - Cross axis alignment
+- **object-fit** for image scaling within containers
+- **::after pseudo-element** for layout spacing tricks
+- **box-sizing: border-box** for predictable dimensions
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌─┬─┬─┐
+  │ │ │ │
+  ├─┼─┼─┤
+  │ │ │ │
+  └─┴─┴─┘
+  🖼️ FLEX 🖼️
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/06_FlexBox_Gallery)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
