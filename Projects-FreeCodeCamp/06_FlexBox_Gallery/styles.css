@@ -1,0 +1,77 @@
+/* Insights -
+
+- box-sizing: How width/height is calculated. Default 'content-box' (only content), 'border-box' (includes padding + border).
+
+- text-transform: Changes text appearance (uppercase, lowercase, capitalize, etc.) without changing HTML.
+
+- display: flex; (IMPORTANT) Activates flexbox - enables flexible, responsive layouts.
+
+- Main Axis & Cross Axis: Main axis = flex-direction (row = horizontal, column = vertical). Cross axis = perpendicular to main.
+
+- flex-direction: Sets item flow direction.
+  * row: left to right (default) | row-reverse: right to left
+  * column: top to bottom | column-reverse: bottom to top
+
+- flex-wrap: Should items wrap to new lines?
+  * nowrap: single line (default) | wrap: multi-line | wrap-reverse: multi-line reversed
+
+- justify-content: (IMPORTANT) Aligns items along main axis.
+  * flex-start: start | flex-end: end | center: center
+  * space-between: spread out, edges touch | space-around: space around each | space-evenly: equal spacing
+
+- align-items: (IMPORTANT) Aligns items along cross axis.
+  * stretch: fill container (default) | flex-start: start | flex-end: end | center: center | baseline: text baseline
+
+- object-fit: How images/videos fit inside their container.
+  * fill: stretch to fill (default) | contain: fit inside, keep aspect ratio | cover: fill container, keep aspect ratio (may crop)
+  * none: keep original size | scale-down: smaller of 'none' or 'contain'
+
+- ::after: Like adding an invisible ghost box after your element. CSS can see it and style it, but it's not real HTML.
+
+- content: "": The magic word that makes ::after appear. Empty quotes ("") = invisible box that takes up space.
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
