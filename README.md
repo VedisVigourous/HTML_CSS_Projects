@@ -354,6 +354,50 @@ A responsive photo gallery showcasing the power and flexibility of CSS Flexbox f
 
 ---
 
+### 🔤 07 - Typography
+
+<table>
+<tr>
+<td width="70%">
+
+**Typography and Text Styling**
+
+A detailed nutrition label replica that dives deep into CSS typography techniques for precise, readable text layouts.
+
+**Key Learning Points:**
+- **Google Fonts** import and usage with multiple weights (400, 700, 800)
+- **letter-spacing** for fine-tuned character spacing
+- **text-indent** and **hanging indents** for footnote-style text
+- **rem/em units** for scalable, font-relative sizing
+- **Flexbox** for label row alignment (`justify-content: space-between`)
+- **:not() pseudo-class** selector for conditional styling
+- **font-weight** values (800 = extra bold) for visual hierarchy
+- **border-bottom** dividers for structured information display
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌──────────┐
+  │Nutrition │
+  │  Facts   │
+  │──────────│
+  │Calories  │
+  │    230   │
+  └──────────┘
+  🔤 CSS 🔤
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/07_Typography)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
