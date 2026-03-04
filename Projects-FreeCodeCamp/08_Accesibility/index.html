@@ -6,9 +6,15 @@
 <!-- Insight: 
   1- Meta (description) tag is used here for accesibility and for SEO (Search Engine Optimization) which tells the reader what the page is about 
   
-  2- Header , Main & Nav - tags are used for semantic structure and improve accessibility and readability 
-  
-  3- -->
+  2- Header , Main & Nav - tags are used for semantic structure and improve accessibility and readability
+
+  3- The role attribute tells screen readers what an element IS or DOES.
+     e.g. role="region" marks a section as a landmark, role="img" treats a <div> as an image.
+     It's part of ARIA (Accessible Rich Internet Applications) — key for users with disabilities.
+
+  4- aria-labelledby links an element to another element's text to give it an accessible name.
+     e.g. <section aria-labelledby="id1"> → screen reader reads the text of the element with id="id1"
+     as the label/title of that section. Think of it as saying "this section is named after THAT heading". -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +26,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header></header>
-      <main></main>
+    <header>
+      <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+            <div class="info">
+              <label></label>
+              <input>
+              </div>
+            <div class="info">
+              <label></label>
+              <input>
+            </div>
+            <div class="info">
+              <label></label>
+              <input>
+            </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
