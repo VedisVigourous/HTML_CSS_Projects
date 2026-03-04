@@ -41,6 +41,9 @@ Responsive survey form built for the FreeCodeCamp certification milestone.
 ## 🎓 College Projects
 
 <details open>
+<summary><strong> College Projects </strong></summary>
+
+<details open>
 <summary><b>📰 BBC News Basics</b></summary>
 
 A news website clone practicing semantic HTML structure and basic styling.
@@ -107,6 +110,8 @@ Comprehensive table creation and styling practice.
 - **Tech**: HTML5
 - **Concepts**: Table structure, data organization, accessibility
 - 📄 [View Project](./College_Projects/Tables%20HTML)
+
+</details>
 
 </details>
 
