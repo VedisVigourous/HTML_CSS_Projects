@@ -14,7 +14,13 @@
 
   4- aria-labelledby links an element to another element's text to give it an accessible name.
      e.g. <section aria-labelledby="id1"> → screen reader reads the text of the element with id="id1"
-     as the label/title of that section. Think of it as saying "this section is named after THAT heading". -->
+     as the label/title of that section. Think of it as saying "this section is named after THAT heading".
+
+  5- <footer> is a semantic tag for the bottom section of a page — typically holds contact info,
+     copyright, or links. Screen readers use it as a landmark to jump to directly.
+     <address> is nested inside it to mark contact/location info as an address —
+     it makes the content meaningful to browsers and screen readers, not just visually
+     indented text. Together they clearly say: "this is where you find us". -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -105,8 +111,35 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label>
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+            </div>
+          </div>
         </section>
+        <button type="submit">Send</button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
   </body>
 </html>

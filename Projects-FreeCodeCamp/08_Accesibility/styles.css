@@ -30,7 +30,34 @@
      - content: "Question #" → injects the text "Question #" before every <h3>
      - So <h3>1</h3> visually renders as "Question #1" on the page
      - Only works when the content property is set (even content: "" for decorative use)
-     - Great for adding labels, icons or decorations purely through CSS. */
+     - Great for adding labels, icons or decorations purely through CSS.
+
+  6. top (and bottom, left, right) sets the position of an element relative to its
+     nearest positioned ancestor — but ONLY works when position is set (not static).
+     e.g. top: 0 → sticks the element to the very top of its container
+     - Used with position: absolute/fixed/relative/sticky
+     - top: 50% → moves it halfway down, often paired with transform: translateY(-50%)
+       to perfectly center it vertically.
+
+  7. a. flex-wrap: wraps flex items to the next line if they don't fit in one row.
+     padding-inline-start: adds padding only to the START (left in LTR, right in RTL) of an element.
+     c. margin-block: adds top/bottom (vertical) margin only.
+     — the "inline" and "block" variants are the modern logical way to target horizontal and vertical spacing separately.
+
+  8. @media (prefers-reduced-motion: no-preference) — a media query that checks the user's OS setting.
+     If the user has NOT asked to reduce motion (i.e. they're fine with animations), apply the styles inside.
+     - scroll-behavior: smooth → makes the page scroll gradually instead of instantly jumping
+       when clicking anchor links (like the nav links in this project).
+     - Wrapped in this media query so people who are sensitive to motion (e.g. epilepsy)
+       get instant jumps instead — making it accessible. */
+
+/* ======================================================================================================================= */
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 
 body {
   background: #f5f6f7;
@@ -44,6 +71,9 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
 }
 
 #logo {
@@ -56,6 +86,7 @@ header {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center;
 }
 
 nav {
@@ -67,6 +98,39 @@ nav {
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 50px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
 }
 
 h1,
@@ -76,10 +140,90 @@ h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 60px;
 }
 
-h3:before {
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.formrow {
+  margin-top: 30px;
+  padding: 0px 15px;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.info label, .info input {
+  display: inline-block;
+}
+
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 1.375rem;
+}
+
+h3::before {
   content: "Question #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 1.438rem;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+footer {
+  background-color: #2a2a40;
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
 }
 
 .sr-only {
