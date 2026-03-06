@@ -403,6 +403,49 @@ A detailed nutrition label replica that dives deep into CSS typography technique
 
 ---
 
+### ♿ 08 - Accessibility
+
+<table>
+<tr>
+<td width="70%">
+
+**Building for Everyone**
+
+An HTML/CSS quiz page built with a strong focus on web accessibility — ensuring the site works for all users including those using screen readers and assistive technologies.
+
+**Key Learning Points:**
+- **ARIA roles** (`role="region"`, `role="img"`) to give semantic meaning to elements
+- **aria-labelledby** to link sections to their headings for screen readers
+- **`<footer>` & `<address>`** semantic tags for contact info landmarks
+- **`.sr-only` class** — visually hides text but keeps it readable by screen readers
+- **`::before` pseudo-element** with `content` to inject labels via CSS
+- **`@media (prefers-reduced-motion)`** for motion-sensitive users with `scroll-behavior: smooth`
+- **`padding-inline-start` & `margin-block`** — modern logical CSS spacing properties
+- **`aspect-ratio`** for maintaining proportional element dimensions
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌──────────┐
+  │  ♿ A11Y │
+  │  ──────  │
+  │ ◉ Yes   │
+  │ ○ No    │
+  └──────────┘
+  ♿ ACCESS ♿
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/08_Accesibility)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
@@ -462,6 +505,7 @@ graph LR
 | **Styling** | CSS3, Flexbox, Grid | ⭐⭐⭐⭐⭐ |
 | **Forms** | Input Types, Validation, Accessibility | ⭐⭐⭐⭐⭐ |
 | **Layout** | Responsive Design | ⭐⭐⭐⭐ |
+| **Accessibility** | ARIA, Screen Readers, Semantic HTML | ⭐⭐⭐⭐ |
 | **UI/UX** | Design Principles | ⭐⭐⭐⭐ |
 
 </div>
@@ -486,6 +530,6 @@ graph LR
 
 **⭐ Star this repository if you find it helpful!**
 
-*Last Updated: February 2026*
+*Last Updated: March 2026*
 
 </div>
