@@ -36,6 +36,16 @@ Responsive survey form built for the FreeCodeCamp certification milestone.
 
 </details>
 
+<details open>
+<summary><b>🏆 02 - Tribute Page (FCC)</b></summary>
+
+A tribute page dedicated to celebrating an influential figure, built for the FreeCodeCamp certification.
+- **Tech**: HTML5, CSS3
+- **Concepts**: Responsive layouts, typography, image handling, content structure
+- 📄 [View Project](./Certifications-Project/02_TributePage)
+
+</details>
+
 ---
 
 ## 🎓 College Projects
