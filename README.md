@@ -456,6 +456,46 @@ An HTML/CSS quiz page built with a strong focus on web accessibility — ensurin
 
 ---
 
+### 🎯 09 - Pseudo Selectors
+
+<table>
+<tr>
+<td width="70%">
+
+**Smarter Targeting with CSS Selectors**
+
+A balance-sheet project focused on practical pseudo-selector usage, selector behavior, and screen-reader-friendly hidden text patterns.
+
+**Key Learning Points:**
+- **`:first-of-type`** and **`:last-of-type`** to style first/last matching sibling elements
+- **`:nth-of-type(3)`** for targeting a specific sibling position
+- **`:hover`** for interactive row highlighting
+- **`span[class~="sr-only"]`** to visually hide text while keeping it available to screen readers
+- Clear understanding of selector differences: **`tag.class`** vs **`tag[class="exact"]`** vs **`tag[class~="word"]`**
+- In-file comment notes in `styles.css` documenting each `sr-only` declaration line-by-line
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌────────────┐
+  │ :hover     │
+  │ :nth-of... │
+  │ sr-only    │
+  └────────────┘
+  🎯 CSS 🎯
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/09_PseudoSelectors)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
