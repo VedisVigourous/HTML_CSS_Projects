@@ -1,0 +1,191 @@
+/*
+INSIGHT NOTES (LAYMAN VERSION)
+
+1) What "sr-only" means:
+- "sr-only" is used to hide text visually but keep it available for screen readers.
+- So users who cannot see the screen can still hear important labels.
+- The CSS below does this by making content tiny, clipped, and off normal visual flow.
+
+2) Pseudo-selectors used in this file:
+- :first-of-type  -> picks the first matching sibling element.
+- :last-of-type   -> picks the last matching sibling element.
+- :nth-of-type(3) -> picks the 3rd matching sibling element.
+- :hover          -> applies styles when mouse is over an element.
+
+3) Selector difference:
+- tag.class (example: tr.total)
+  Selects that tag if it has that class, even with other classes too.
+  Example: class="total" or class="total highlight" both match.
+
+- tag[class="setClass"] (example: tr[class="total"])
+  Selects only if class value is exactly that one text.
+  Example: class="total" matches, but class="total highlight" does not.
+
+- tag[class~="setClass"] (example: span[class~="sr-only"])
+  Selects when that class word exists in a class list.
+  Example: class="sr-only" and class="sr-only year" both match.
+*/
+
+
+
+span[class~="sr-only"] {
+  /* Removes any visible border so hidden text never shows a box. */
+  border: 0 !important;
+  /* Clips the element to a tiny rectangle so it is visually hidden. */
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* Modern clipping method to keep the content visually hidden. */
+  clip-path: inset(50%) !important;
+  /* Shrinks element height to 1px to avoid taking visible space. */
+  height: 1px !important;
+  /* Shrinks element width to 1px to avoid taking visible space. */
+  width: 1px !important;
+  /* Removes it from normal layout flow while keeping it in the DOM. */
+  position: absolute !important;
+  /* Hides any overflowing pixels that could still appear. */
+  overflow: hidden !important;
+  /* Prevents line breaks that might expose bits of hidden text. */
+  white-space: nowrap !important;
+  /* Clears inner spacing so no extra visual area is created. */
+  padding: 0 !important;
+  /* Pulls it off-screen slightly and removes outer spacing impact. */
+  margin: -1px !important;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
+
+section {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 2px solid #d0d0d5;
+}
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #0a0a23;
+  color: #fff;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  margin: 0 -2px;
+}
+
+#years span[class] {
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+table caption {
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+  position: absolute;
+  top: -2.25rem;
+  left: 0.5rem;
+}
+
+tbody td {
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+tr[class="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+  text-align: right;
+  padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+tr.total:hover {
+  background-color: #99c9ff;
+}
+
+td.current {
+  font-style: italic;
+}
+
+tr.data {
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+  text-align: left;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+tr.data th .description {
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
+
+tr.data td {
+  vertical-align: top;
+  padding: 0.3rem 0.25rem 0;
+  text-align: right;
+}
+
+tr.data td:last-of-type {
+  padding-right: 0.5rem;
+}
