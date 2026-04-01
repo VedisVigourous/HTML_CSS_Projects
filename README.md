@@ -496,6 +496,46 @@ A balance-sheet project focused on practical pseudo-selector usage, selector beh
 
 ---
 
+### 📌 10 - CSS Positioning
+
+<table>
+<tr>
+<td width="70%">
+
+**Precise Placement with CSS Positioning**
+
+A project focused on controlling element placement and layering to build a structured cat illustration.
+
+**Key Learning Points:**
+- **position values**: `static`, `relative`, `absolute`, `fixed`, `sticky`
+- **offset properties**: `top`, `right`, `bottom`, `left`
+- **z-index** for stacking and overlap control
+- **transform** functions like `rotate()` and `translate()`
+- **border-radius** corner control for custom shapes
+- **CSS triangle technique** using transparent borders
+
+</td>
+<td width="30%" align="center">
+
+```
+  ┌──────────┐
+  │  top:0   │
+  │ left:0   │
+  │ z: 10    │
+  └──────────┘
+  📌 CSS 📌
+```
+
+**Status:** ✅ Complete
+
+📁 [View Code](./Projects-FreeCodeCamp/10_CSS-Positioning)
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 🛠️ Technologies Used
 
 <table>
@@ -580,6 +620,6 @@ graph LR
 
 **⭐ Star this repository if you find it helpful!**
 
-*Last Updated: March 2026*
+*Last Updated: April 2026*
 
 </div>
