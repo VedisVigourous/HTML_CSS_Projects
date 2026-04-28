@@ -46,6 +46,16 @@ A tribute page dedicated to celebrating an influential figure, built for the Fre
 
 </details>
 
+<details open>
+<summary><b>🧾 03 - Resume (Technical Documentation Page)</b></summary>
+
+A resume-style technical documentation page with a fixed navigation panel and responsive layout behavior.
+- **Tech**: HTML5, CSS3
+- **Concepts**: Fixed sidebar navigation, semantic sectioning, responsive media queries, code styling
+- 📄 [View Project](./Certifications-Project/03_Resume)
+
+</details>
+
 ---
 
 ## 🎓 College Projects
@@ -594,8 +604,8 @@ graph LR
 | **Markup** | HTML5, Semantic Elements | ⭐⭐⭐⭐⭐ |
 | **Styling** | CSS3, Flexbox, Grid | ⭐⭐⭐⭐⭐ |
 | **Forms** | Input Types, Validation, Accessibility | ⭐⭐⭐⭐⭐ |
-| **Layout** | Responsive Design | ⭐⭐⭐⭐ |
-| **Accessibility** | ARIA, Screen Readers, Semantic HTML | ⭐⭐⭐⭐ |
+| **Layout** | Responsive Design | ⭐⭐⭐⭐⭐ |
+| **Accessibility** | ARIA, Screen Readers, Semantic HTML | ⭐⭐⭐⭐⭐ |
 | **UI/UX** | Design Principles | ⭐⭐⭐⭐ |
 
 </div>
@@ -620,6 +630,6 @@ graph LR
 
 **⭐ Star this repository if you find it helpful!**
 
-*Last Updated: April 2026*
+*Last Updated: April 28, 2026*
 
 </div>
