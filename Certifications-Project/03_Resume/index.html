@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techincal Documentation</title>
+    <style>
+        @media (max-width: 768px) {
+            body{
+                background-color: lightblue;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 270px; 
+            height: 100%; 
+            border-right: 2px solid #ccc;
+            background-color: #f5f6f7;
+            overflow-y: auto; 
+        }
+
+        #navbar header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+    
+        #navbar ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar li {
+            border-bottom: 1px solid #ccc;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #main-doc {
+            margin-left: 270px; 
+            padding: 30px; 
+        }
+
+    
+        .main-section {
+            margin-bottom: 40px;
+        }
+
+        .main-section header {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @media (max-width: 768px) {
+        #navbar {
+            position: relative;
+            width: 100%;
+            height: auto;
+            border-right: none;
+            border-bottom: 2px solid black;
+        }
+        #main-doc {
+            margin-left: 0;
+        }
+    }
+</style>
+    </style>
+</head>
+<body>
+    <main id="main-doc">
+        <nav class="navbar" id="navbar">
+            <header>Resume Sections</header>
+            <p>&nbsp;&nbsp;&nbsp;Table of Contents:</p>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Education" class="nav-link">Education</a></li>
+                <li><a href="#Technical_Skills" class="nav-link">Technical Skills</a></li>
+                <li><a href="#Certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#Projects_and_Events" class="nav-link">Projects and Events</a></li>
+            </ul>
+        </nav>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p class="dev-intro">I am a CSE Undergrad Developer from First Year</p>
+            <p class="dev-intro">I am pursuing my degree from ABES Engineering College, Ghaziabad</p>
+            <p class="dev-intro">Apart from academics, I am actively involved in various technical projects and events.</p>
+            <p class="dev-intro">I have a strong passion for coding and problem-solving, and I am always eager to learn new technologies and techniques.</p>
+        </section>
+        <section class="main-section" id="Education">
+            <header>Education</header>
+            <p id="academics">Sem 1 SGPA: 9.52/10</p>
+            <p id="current_focus">Current Focus:</p>
+            <ul>
+                <li>DSA in Java</li>
+                <li>Object-Oriented Programming</li>
+                <li>Web Development</li>
+                <li>Competitive Programming</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Technical_Skills">
+            <header>Technical Skills</header>
+            <p id="languages">Languages: <code>Java, JavaScript , C++ , FrontEnd - [HTML5 and CSS3]</code></p>
+            <p id="cloudAi">Cloud & AI: <code>Google Gemini API, Generative AI, Vertex AI, Google Cloud Platform (GCP)</code></p>
+            <p id="tools">Developer Tools: <code>Git, GitHub Actions, Chrome Extension API, VS Code, IntelliJ IDEA</code></p>
+            <p id="concepts">Core Concepts: <code>Data Structures & Algorithms (DSA), DOM Manipulation, Object Oriented Programming</code></p>
+        </section>
+        <section class="main-section" id="Certifications">
+            <header>Certifications</header>
+            <p id="oracleAI">Oracle AI Certified Foundations Associate: Validated proficiency in AI/ML fundamentals</p>
+            <p id="gskills">Google Cloud Skills Boost (Public Profile): Earned Level 3 GenAI Badge & 10+ Skill Badges.</p>
+            <p id="promptDesign">Prompt Design in Vertex AI: Mastered prompt engineering techniques for large language models.</p>
+        </section>
+        <section class="main-section" id="Projects_and_Events">
+            <header>Projects and Events</header>
+            <p id="resonance"><code>Project Resonance (Accessibility Tool) | JavaScript, Gemini 1.5 API, Chrome APIs</code></p>
+            <ul>
+                <li>Developed an AI-powered Chrome Extension to bridge the digital culture gap for visually impaired users by
+dynamically reading aloud the context, vibe, and humor of internet memes.</li>
+                <li>Competed at the MLH HackDays offline hackathon, successfully pitching the live product and securing a Top 33
+placement out of 120+ participating teams.</li>
+            </ul>
+
+            <p id="behance"><code>Behance Homepage Clone | HTML5, CSS3, Flexbox/Grid</code></p>
+            <ul>
+                <li>Engineered a pixel-perfect replica of the Behance homepage using semantic HTML5 and advanced CSS.</li>
+                <li>Optimized frontend structure for maintainability, demonstrating strong grasp of Web Development fundamentals.</li>
+            </ul>
+
+            <p><code>Java OOPs Game Suite | Java, Object-Oriented Programming</code></p>
+            <ul>
+                <li>Developed a modular suite of console-based games (Number Guessing, Rock-Paper-Scissors) using pure Java.</li>
+                <li>Implemented core OOP principles including Inheritance and Encapsulation to manage game logic.</li>
+                <li>Refined algorithmic logic for random number generation and user input validation.</li>
+            </ul>
+
+            <header>Extracurricular and Hackathons</header>
+            <ul>
+                <li>HackDays Offline Hackathon (MLH): Reached Round 2 (Top 33 out of 120+ teams) at Galgotias College by
+building a live accessibility product. One of only two first-year teams to clear initial evaluations</li>
+                <li>Major League Hacking (MLH): Participant in Global Hack Week; collaborated on open-source challenges.</li>
+                <li>Competitive Coding: Achieved 3-Star (Java) & 2-Star (Problem Solving) on HackerRank</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
